@@ -1,0 +1,27 @@
+{
+  "name": "cicada-annie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Annie",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.5.1",
+    "browser-sync": "^2.18.12",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}
