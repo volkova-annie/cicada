@@ -1,0 +1,42 @@
+*
+  box-sizing: border-box
+
+body
+  background-color: $granite
+
+.counsil
+  display: flex
+  flex-wrap: wrap
+  max-width: 1024px
+  margin: 0 auto
+  &-card
+    width: 50%
+    padding: 0.5em
+    text-align: center
+    margin-top: 1.5em
+    margin-bottom: 0.5em
+    @include respond-to($s)
+      width: 33.33%
+    @include respond-to($m)
+      width: 25%
+    @include respond-to($l)
+      width: 20%
+  &-avatar
+    img
+      width: 100%
+      margin: 0 auto 1em auto
+      display: block
+      border: 4px solid $blue
+      &:hover
+        transition: all 1s
+    &:hover + .counsil-name
+      transition: all .5s
+      color: $orange
+  @include cicada('.counsil-card', 'img')
+  &-name
+    color: $blue
+    margin-bottom: 5px
+    text-transform: uppercase
+  &-position
+    color: $gray
+    font-family: serif
